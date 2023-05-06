@@ -17,8 +17,8 @@ const Home = () => {
                         <Image src={book2} fluid alt='Project2' className='project' />
                     </Row>
                     <Row>
-                        <Image src={book3} fluid width={10} alt='Project3' className='project' />
-                        <Image src={book4} fluid width={10} alt='Project4' className='project' />
+                        <Image src={book3} fluid alt='Project3' className='project' />
+                        <Image src={book4} fluid alt='Project4' className='project' />
                     </Row>
                 </Col>
                 <Col xs={6}>
