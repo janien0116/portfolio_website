@@ -1,40 +1,33 @@
 import React from 'react'
 import { Container, Row, Col, Image, Stack, Button, Figure, ProgressBar } from 'react-bootstrap'
-import book1 from '../assets/bookcovers/1.png'
-import book2 from '../assets/bookcovers/2.png'
-import book3 from '../assets/bookcovers/3.png'
-import book4 from '../assets/bookcovers/4.png'
+import { Link } from 'react-router-dom'
+import heroImage from '../assets/hero-image.png'
 import imagePlaceholder from '../assets/logo-symbol.png'
 import instructorHolder from '../assets/KodeGo_logo.png'
+import Marquee from 'react-fast-marquee'
 
 const Home = () => {
 
     return (
         <Stack direction='vertical' gap={5}>
-            <Container className='my-5'>
-                <Stack direction='horizontal' gap={2}>
-                    <Col xs={6}>
-                        <Row>
-                            <Image src={book1} fluid alt='Project1' className='project' />
-                            <Image src={book2} fluid alt='Project2' className='project' />
-                        </Row>
-                        <Row>
-                            <Image src={book3} fluid alt='Project3' className='project' />
-                            <Image src={book4} fluid alt='Project4' className='project' />
-                        </Row>
+            <Container fluid className='my-5 px-2'>
+                <Row className='position-relative'>
+                    <Col xs={7}>
+                        <Image src={heroImage} fluid alt='Hero' className='hero-image' />
+                        {/* <p className='hero-marquee'>View projects</p> */}
                     </Col>
-                    <Col xs={6}>
-                        <h1 className="display-5 fw-bold lh-base text-white">Building the web, one pixel at a time. Hi there,
-                            I'm
-                            Janela!</h1>
-                        <p className='text-white fs-5'>Hello and welcome! My name is Janela Daculong,
+                    <Col xs={5}>
+                        <h1 className="hero-header display-5 position-absolute">Building the web, </h1>
+                        <h1 className="hero-header2 display-5 position-absolute">One pixel at a time.</h1>
+                        <h1 className="hero-header3 display-5 position-absolute">Hi there, I'm Janela!</h1>
+                        <p className='hero-text text-white fs-5'>Hello and welcome! My name is Janela Daculong,
                             and I'm a self-studied web developer with a strong foundation in full stack web development.
                             With a passion for creating beautiful and functional websites, I've worked on several
                             projects to showcase my skills and abilities. Take a look at my portfolio to see some of my
                             best work and learn more about my skills and experience. Thank you for visiting!</p>
-                        <Button variant='secondary' className='rounded-pill px-5 fs-5 fw-bold border'>View Portfolio</Button>
+                        <Button variant='secondary' className='rounded-pill px-5 fs-5 fw-bold border border-dark'>View Portfolio</Button>
                     </Col>
-                </Stack>
+                </Row>
             </Container>
             <Container className='my-5 fs-5'>
                 <h1 className='text-center display-5 fw-bold lh-base text-white'>My Featured Project</h1>
@@ -46,8 +39,10 @@ const Home = () => {
                             <li className='mb-3'>An interactive and user-friendly academy website catering to students and instructors.</li>
                             <li className='mb-3'>Received a glowing feedback of "super above and beyond" from our instructor and awarded as Best Capstone Project.</li>
                         </ul>
-                        <div  className='d-flex justify-content-center'>
-                            <Button variant='dark' className='rounded-pill px-5 fs-5 fw-bold border'>View Live Demo</Button>
+                        <div className='d-flex justify-content-center'>
+                            <Link to={`https://skill-amplifire.vercel.app/`} target="_blank">
+                                <Button variant='dark' className='rounded-pill px-5 fs-5 fw-bold border'>View Live Demo</Button>
+                            </Link>
                         </div>
                     </Col>
                     <Col>
@@ -59,7 +54,7 @@ const Home = () => {
                 <h1 className='text-center display-5 fw-bold lh-base text-white mb-5'>What my instructor is saying about me</h1>
                 <Stack direction='horizontal' gap={5}>
                     <Col lg={4}>
-                        <Image src={instructorHolder} alt='Instructor' fluid roundedCircle/>
+                        <Image src={instructorHolder} alt='Instructor' fluid roundedCircle />
                     </Col>
                     <Col lg={8}>
                         <Figure>
