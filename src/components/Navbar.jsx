@@ -5,7 +5,7 @@ import logo from '../assets/logo.png'
 const PortfolioNavbar = () => {
     return (
         <div>
-            <Navbar bg="dark" expand="lg" variant="dark" className='py-1'>
+            <Navbar bg="dark" expand="lg" variant="dark" className='py-0'>
                 <Container>
                     <Navbar.Brand><Image src={logo} width={80} fluid alt="logo"/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -15,7 +15,7 @@ const PortfolioNavbar = () => {
                                 <Nav.Link aria-current="page" href="/">Home</Nav.Link>
                             </Nav.Item>
                             <Nav.Item className="me-4">
-                                <Nav.Link aria-current="page" href="/projects">Projects</Nav.Link>
+                                <Nav.Link aria-current="page" href="/portfolio">Portfolio</Nav.Link>
                             </Nav.Item>
                             <Nav.Item className="me-4">
                                 <Nav.Link aria-current="page" href="/resume">Resume</Nav.Link>
