@@ -53,32 +53,77 @@ code {
 .hero-image {
   position: relative;
 }
-.hero-marquee {
+.hero-links {
+  font-family: 'VT323', monospace;
   position: absolute;
-  font-weight: bold;
-  color: #DB9E97;
-  font-size: 70px;
-  letter-spacing: 6px;
-  bottom: 30%;
-  left: 5%;
-  transform: rotate(-90deg);
-  transform-origin: bottom left;
-  animation: running-text-animation 1s linear infinite;
 }
-@keyframes running-text-animation {
-  0% {
-    transform: translateY(0) translateX(0) rotate(-90deg); /* Start position */
-  }
-  25% {
-    transform: translateY(0) translateX(50%) rotate(-90deg); /* Move right */
-  }
-  50% {
-    transform: translateY(-50%) translateX(50%) rotate(-90deg); /* Move up and right */
-  }
-  75% {
-    transform: translateY(-50%) translateX(0) rotate(-90deg); /* Move up */
-  }
-  100% {
-    transform: translateY(-100%) translateX(0) rotate(-90deg); /* End position */
-  }
+.hero-links a {
+  font-size: 30px;
+  color: black;
+}
+.hero-links a:hover {
+  color: #db7368;
+}
+#skill-ampli {
+  bottom: 20%;
+  right: 45%;
+}
+#joiners-port {
+  bottom: 10%;
+  left: 5%;
+}
+#adobe-clone {
+  top: 40%;
+  right: 56%;
+  font-size: 10px !important;
+  line-height: 20px;
+}
+.glass {
+  max-width: 500px !important;
+  backdrop-filter: blur(10px);
+  background-color: rgba(219, 158, 151, 0.3) !important;
+  border: 3px solid transparent !important;
+  border-image: linear-gradient(45deg, rgb(203, 25, 231) 0%, rgb(110, 110, 241)49%, rgba(0,212,255,1) 100%) !important;
+  border-image-slice: 1 !important;
+  box-shadow: 0 5px 20px rgba(34, 8, 95, 0.25);
+  z-index: 1;
+  color: #fff;
+}
+
+#sa-img1 {
+  max-width: 250px;
+  position: absolute;
+  bottom: 30%;
+  opacity: 0.6;
+}
+#sa-img2 {
+  max-width: 600px;
+  position: absolute;
+  right: -5%;
+  bottom: -10%;
+  opacity: 0.6;
+}
+#jp-img1 {
+  max-width: 290px;
+  position: absolute;
+  right: -3%;
+  bottom: 0;
+  opacity: 0.6;
+}
+#jp-img2 {
+  max-width: 600px;
+  position: absolute;
+  left: 0;
+  top: -10%;
+  opacity: 0.6;
+}
+#ac-img {
+  max-width: 700px;
+  position: absolute;
+  right: 0;
+  top: -10%;
+  opacity: 0.6;
+}
+embed {
+  height: 100% !important;
 }
