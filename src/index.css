@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 body {
   margin: 0;
@@ -31,13 +31,13 @@ code {
   font-weight: bold !important;
   color: #fff;
   top: 55px;
-  left: 40%
+  left: 40%;
 }
 .hero-header3 {
   font-weight: bold !important;
   color: #fff;
   top: 105px;
-  left: 50%
+  left: 50%;
 }
 .hero-text {
   margin-top: 200px;
@@ -54,7 +54,7 @@ code {
   position: relative;
 }
 .hero-links {
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   position: absolute;
 }
 .hero-links a {
@@ -83,7 +83,12 @@ code {
   backdrop-filter: blur(10px);
   background-color: rgba(219, 158, 151, 0.3) !important;
   border: 3px solid transparent !important;
-  border-image: linear-gradient(45deg, rgb(203, 25, 231) 0%, rgb(110, 110, 241)49%, rgba(0,212,255,1) 100%) !important;
+  border-image: linear-gradient(
+    45deg,
+    rgb(203, 25, 231) 0%,
+    rgb(110, 110, 241) 49%,
+    rgba(0, 212, 255, 1) 100%
+  ) !important;
   border-image-slice: 1 !important;
   box-shadow: 0 5px 20px rgba(34, 8, 95, 0.25);
   z-index: 1;
@@ -125,8 +130,43 @@ code {
   opacity: 0.6;
 }
 .img-thumbnail {
-  background-color: #A1483F !important;
-  border: 2px solid #A1483F !important;
+  background-color: #a1483f !important;
+  border: 2px solid #a1483f !important;
+}
+.email-notif {
+  max-width: 400px !important;
+  backdrop-filter: blur(10px);
+  background-color: rgba(219, 158, 151, 0.3) !important;
+  border: 2px solid rgba(219, 158, 151, 0.3);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+  -webkit-animation: slide-in-left 0.5s linear both;
+  animation: slide-in-left 0.5s linear both;
+}
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 .glass2 {
   max-width: 800px !important;
@@ -135,6 +175,19 @@ code {
   border: 3px solid rgba(219, 158, 151, 0.3);
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(34, 8, 95, 0.25);
-  z-index: 1;
   padding: 30px !important;
+}
+.active {
+  color: #fff;
+  font-weight: bold;
+}
+.text-decoration-none:hover {
+  text-decoration: underline !important;
+}
+#instructor-img {
+  max-width: 250px;
+}
+
+@media screen and (min-width: 700px) {
+  /* CSS rules to apply when the screen width is 700px or larger */
 }

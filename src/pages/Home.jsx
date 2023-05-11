@@ -4,23 +4,24 @@ import { Link } from 'react-router-dom'
 import heroImage from '../assets/hero-image.png'
 import imagePlaceholder from '../assets/logo-symbol.png'
 import instructorHolder from '../assets/KodeGo_logo.png'
+import resume from '../assets/Daculong_Janela_Resume.pdf'
 import Marquee from 'react-fast-marquee'
 
 const Home = () => {
 
-    const handleClick = () => window.scrollTo(0,0);
+    const handleClick = () => window.scrollTo(0, 0);
 
     return (
         <Stack direction='vertical' gap={5}>
             <Container fluid className='my-5 px-2'>
                 <Row className='position-relative'>
-                    <Col xs={7}>
+                    <Col lg={7} >
                         <Image src={heroImage} fluid alt='Hero' className='hero-image' />
                         <p className='hero-links' id='skill-ampli'><a href='https://skill-amplifire.vercel.app/' target="_blank">Skill Amplifire</a></p>
-                        <p className='hero-links text-center' id='joiners-port'><a href='https://skill-amplifire.vercel.app/' target="_blank">Joiner's <br />Portal</a></p>
+                        <p className='hero-links text-center' id='joiners-port'><a href='https://github.com/janien0116/miniproject2_joiners_portal.git' target="_blank">Joiner's <br />Portal</a></p>
                         <p className='hero-links text-center' id='adobe-clone'><a href='https://myclonedwebsite-adobe.vercel.app/' target="_blank">Adobe<br />(Clone)</a></p>
                     </Col>
-                    <Col xs={5}>
+                    <Col lg={5}>
                         <h1 className="hero-header display-5 position-absolute">Building the web, </h1>
                         <h1 className="hero-header2 display-5 position-absolute">One pixel at a time.</h1>
                         <h1 className="hero-header3 display-5 position-absolute">Hi there, I'm Janela!</h1>
@@ -29,16 +30,24 @@ const Home = () => {
                             With a passion for creating beautiful and functional websites, I've worked on several
                             projects to showcase my skills and abilities. Take a look at my portfolio to see some of my
                             best work and learn more about my skills and experience. Thank you for visiting!</p>
-                        <Link to={'/portfolio'}>
-                            <Button variant='secondary' className='rounded-pill px-5 fs-5 fw-bold border border-dark' onClick={handleClick}>View Portfolio</Button>
-                        </Link>
+                        <Stack direction='vertical' className='align-items-center justify-content-center'>
+                            <Link to={'/portfolio'}>
+                                <Button variant='secondary' className='rounded-pill px-5 fs-5 fw-bold border border-dark' onClick={handleClick}>View Portfolio</Button>
+                            </Link>
+                            <p className='fs-2'>
+                                <Stack direction="horizontal" gap={3}>
+                                    <a href='https://github.com/janien0116' target='_blank' className='text-black'><i className="bi bi-github"></i></a>
+                                    <a href='https://www.linkedin.com/in/janela-daculong-4b58a3275/' target='_blank' className='text-dark'><i className="bi bi-linkedin"></i></a>
+                                </Stack>
+                            </p>
+                        </Stack>
                     </Col>
                 </Row>
             </Container>
             <Container className='my-5 fs-5'>
                 <h1 className='text-center display-5 fw-bold lh-base text-white'>My Featured Project</h1>
                 <Row className='my-5 text-white'>
-                    <Col className='me-5 mb-3'>
+                    <Col md={{ span: 6, order: 'first' }} xs={{ order: 'last' }} className='mb-3'>
                         <h1>Skill Amplifire<i className="bi bi-fire text-dark"></i></h1>
                         <ul>
                             <li className='mb-3'>Used Bootstrap, ReactJS, ExpressJS, MongoDB and Vercel in developing the project.</li>
@@ -51,16 +60,16 @@ const Home = () => {
                             </Link>
                         </div>
                     </Col>
-                    <Col>
+                    <Col md={{ span: 6, order: 'first' }} xs={{ order: 'first' }}>
                         <Image src={imagePlaceholder} fluid rounded className='mb-5' />
                     </Col>
                 </Row>
             </Container>
             <Container className='fs-5 my-5'>
                 <h1 className='text-center display-5 fw-bold lh-base text-white mb-5'>What my instructor is saying about me</h1>
-                <Stack direction='horizontal' gap={5}>
-                    <Col lg={4}>
-                        <Image src={instructorHolder} alt='Instructor' fluid roundedCircle />
+                <Row className='align-items-center'>
+                    <Col lg={4} className='text-center d-none d-sm-block'>
+                        <Image src={instructorHolder} alt='Instructor' id='instructor-img' fluid roundedCircle />
                     </Col>
                     <Col lg={8}>
                         <Figure>
@@ -72,11 +81,13 @@ const Home = () => {
                             </Figure.Caption>
                         </Figure>
                     </Col>
-                </Stack>
+                </Row>
             </Container>
             <Container className='text-center my-5'>
                 <h1 className='display-5 fw-bold my-5'>Get to know about me more!</h1>
-                <Button variant='dark' className='rounded-pill px-5 pt-2 pb-3 fs-4 fw-bold border mb-5'>Download Resume</Button>
+                <a href={resume} download>
+                    <Button variant='dark' className='rounded-pill px-5 pt-2 pb-3 fs-4 fw-bold border mb-5'><i class="bi bi-download"></i> Download Resume</Button>
+                </a>
             </Container>
             <Container className='filler'></Container>
         </Stack>

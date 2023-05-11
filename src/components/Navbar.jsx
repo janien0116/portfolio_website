@@ -1,24 +1,32 @@
 import React from 'react'
 import { Navbar, Nav, Container, Image } from 'react-bootstrap'
 import logo from '../assets/logo.png'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 const PortfolioNavbar = () => {
+    const navigate = useNavigate()
     return (
         <div>
             <Navbar bg="dark" expand="lg" variant="dark" className='py-0'>
                 <Container>
-                    <Navbar.Brand><Image src={logo} width={80} fluid alt="logo"/></Navbar.Brand>
+                    <Navbar.Brand><Image src={logo} width={80} fluid alt="logo" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto mb-2 mb-lg-0 fs-5">
                             <Nav.Item className="me-4">
-                                <Nav.Link aria-current="page" href="/">Home</Nav.Link>
+                                <NavLink to="/" exact activeClassName="active" className="nav-link me-4">
+                                    Home
+                                </NavLink>
                             </Nav.Item>
                             <Nav.Item className="me-4">
-                                <Nav.Link aria-current="page" href="/portfolio">Portfolio</Nav.Link>
+                                <NavLink to="/portfolio" activeClassName="active" className="nav-link me-4">
+                                    Portfolio
+                                </NavLink>
                             </Nav.Item>
                             <Nav.Item className="me-4">
-                                <Nav.Link aria-current="page" href="/resume">Resume</Nav.Link>
+                                <NavLink to="/resume" activeClassName="active" className="nav-link me-4">
+                                    Resume
+                                </NavLink>
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>

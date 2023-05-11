@@ -8,8 +8,8 @@ import Resume from "./pages/Resume";
 function App() {
   return (
     <div>
-      <PortfolioNavbar />
       <Router>
+      <PortfolioNavbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/portfolio" element={<Portfolio />}></Route>
