@@ -20,9 +20,6 @@ const PortfolioNavbar = () => {
                             <Nav.Item className="me-4">
                                 <Nav.Link aria-current="page" href="/resume">Resume</Nav.Link>
                             </Nav.Item>
-                            <Nav.Item className="me-4">
-                                <Nav.Link aria-current="page" href="/contact">Contact Me</Nav.Link>
-                            </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -7,19 +7,22 @@ import joinersPortal from '../assets/projects-images/joinersportal_home.png'
 import jpDestination from '../assets/projects-images/joinersportal_destination.png'
 import adobeClone from '../assets/projects-images/adobe_cloned.png'
 import certificateOne from '../assets/certificates/certificate-of-completion-for-javascript-basics.pdf'
+import certificateTwo from '../assets/certificates/certificate-of-completion-for-object-oriented-programming-in-javascript.pdf'
+import certificateThree from '../assets/certificates/SoloLearn_JSIntermediate_Certificate.pdf'
+import certificateFour from '../assets/certificates/fcc_JavaScript_Certificate.pdf'
 
 const Portfolio = () => {
     return (
         <div>
             <Container className='py-5'>
-                <h1 className='fw-bold text-white text-center my-5'>My Projects</h1>
+                <h1 className='fw-bold text-white text-center mb-5'>My Projects</h1>
                 <Stack direction='vertical' gap={5}>
                     <Row className='align-items-center justify-content-center'>
                         <Col lg={3}>
-                            <Image fluid src={profilePic} alt='Applicant' roundedCircle />
+                            <Image fluid src={profilePic} alt='Applicant' roundedCircle thumbnail/>
                         </Col>
                         <Col lg={8}>
-                            <p className='text-white fs-4'>Welcome to my portfolio! As an aspiring web developer, I'm excited to present the projects I have developed during my time at Kodego PH bootcamp. These projects reflect my dedication to learning and showcase my skills in web development. Please take a moment to explore and discover the variety of technologies and techniques I have employed to bring these projects to life.</p>
+                            <p className='text-white fs-5'>Welcome to my portfolio! As an aspiring web developer, I'm excited to present the projects I have developed during my time at Kodego PH bootcamp. These projects reflect my dedication to learning and showcase my skills in web development. Please take a moment to explore and discover the variety of technologies and techniques I have employed to bring these projects to life.</p>
                         </Col>
                     </Row>
                     <Container className='mb-5'></Container>
@@ -68,8 +71,26 @@ const Portfolio = () => {
                         <Image fluid src={adobeClone} rounded alt='Adobe Cloned Webpage Screenshot' id='ac-img' />
                     </Row>
                     <h1 className='fw-bold text-white text-center my-5'>My Certifications</h1>
-                    <embed src={`${certificateOne}#toolbar=0&view=fitH`} width="500" type="application/pdf" />
-                    <a href={certificateOne} download>Download PDF</a>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <embed src={`${certificateOne}#toolbar=0&view=fitH`} type="application/pdf" height={'201'} fluid />
+                                <p><a href={certificateOne} className='text-primary' download><i class="bi bi-download"></i> Download PDF</a></p>
+                            </Col>
+                            <Col>
+                                <embed src={`${certificateTwo}#toolbar=0&view=fitH`} type="application/pdf" height={'201'} fluid />
+                                <p><a href={certificateTwo} className='text-primary' download><i class="bi bi-download"></i> Download PDF</a></p>
+                            </Col>
+                            <Col>
+                                <embed src={`${certificateThree}#toolbar=0&view=fitH`} type="application/pdf" height={'201'} fluid />
+                                <p><a href={certificateThree} className='text-primary' download><i class="bi bi-download"></i> Download PDF</a></p>
+                            </Col>
+                            <Col>
+                                <embed src={`${certificateFour}#toolbar=0&view=fitH`} type="application/pdf" height={'225'} fluid />
+                                <p><a href={certificateFour} className='text-primary' download><i class="bi bi-download"></i> Download PDF</a></p>
+                            </Col>
+                        </Row>
+                    </Container>
                 </Stack>
             </Container>
         </div>

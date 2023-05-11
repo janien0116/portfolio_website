@@ -124,6 +124,17 @@ code {
   top: -10%;
   opacity: 0.6;
 }
-embed {
-  height: 100% !important;
+.img-thumbnail {
+  background-color: #A1483F !important;
+  border: 2px solid #A1483F !important;
+}
+.glass2 {
+  max-width: 800px !important;
+  backdrop-filter: blur(10px);
+  background-color: rgba(219, 158, 151, 0.3) !important;
+  border: 3px solid rgba(219, 158, 151, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(34, 8, 95, 0.25);
+  z-index: 1;
+  padding: 30px !important;
 }
