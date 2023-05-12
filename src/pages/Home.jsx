@@ -13,18 +13,20 @@ const Home = () => {
 
     return (
         <Stack direction='vertical' gap={5}>
-            <Container fluid className='my-5 px-2'>
-                <Row className='position-relative'>
-                    <Col lg={7} >
-                        <Image src={heroImage} fluid alt='Hero' className='hero-image' />
+            <Container fluid className='my-5 px-2' id='home'>
+                <Row className='position-relative' id='hero'>
+                    <Col lg={7} className='hero-image'>
+                        <Image src={heroImage} fluid alt='Hero' />
                         <p className='hero-links' id='skill-ampli'><a href='https://skill-amplifire.vercel.app/' target="_blank">Skill Amplifire</a></p>
                         <p className='hero-links text-center' id='joiners-port'><a href='https://github.com/janien0116/miniproject2_joiners_portal.git' target="_blank">Joiner's <br />Portal</a></p>
                         <p className='hero-links text-center' id='adobe-clone'><a href='https://myclonedwebsite-adobe.vercel.app/' target="_blank">Adobe<br />(Clone)</a></p>
                     </Col>
                     <Col lg={5}>
-                        <h1 className="hero-header display-5 position-absolute">Building the web, </h1>
-                        <h1 className="hero-header2 display-5 position-absolute">One pixel at a time.</h1>
-                        <h1 className="hero-header3 display-5 position-absolute">Hi there, I'm Janela!</h1>
+                        <div id='hero-text-div'>
+                            <h1 className="hero-header display-5">Building the web, </h1>
+                            <h1 className="hero-header2 display-5">One pixel at a time.</h1>
+                            <h1 className="hero-header3 display-5">Hi there, I'm Janela!</h1>
+                        </div>
                         <p className='hero-text text-white fs-5'>Hello and welcome! My name is Janela Daculong,
                             and I'm a self-directed web developer with a strong foundation in web development tools like HTML, CSS and Javascript.
                             With a passion for creating beautiful and functional websites, I've worked on several

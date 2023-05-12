@@ -29,14 +29,14 @@ const Resume = () => {
     <div>
       <Container className='py-5'>
         <h1 className='fw-bold text-white text-center mb-5'>My Resume</h1>
-        <Container fluid className='w-75'>
+        <Container fluid className='w-75' id='resume-pdf'>
           <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.6.172/build/pdf.worker.min.js`}>
             <Viewer fileUrl={resume} plugins={[newplugin]} />
           </Worker>
         </Container>
         <h1 className='fw-bold text-white text-center mt-5 mb-3'>Contact Me</h1>
         <p className='text-center fs-6 text-white'>Get in touch with me to discuss how I can bring my web development skills and enthusiasm to your team.</p>
-        <Stack direction='horizontal' gap={5} className='justify-content-center fs-6'>
+        <Stack direction='horizontal' gap={5} className='justify-content-center fs-6' id='contact-streams'>
           <p><i class="bi bi-envelope-at"></i> daculongjanela31@gmail.com</p>
           <p><i className="bi bi-linkedin"></i> Janela Daculong</p>
           <p><i class="bi bi-messenger"></i> Janela Daculong</p>
