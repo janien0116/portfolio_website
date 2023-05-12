@@ -15,7 +15,7 @@ const Portfolio = () => {
     return (
         <div>
             <Container className='py-5'>
-                <h1 className='fw-bold text-white text-center mb-5'>My Projects</h1>
+                <h1 className='fw-bold text-white text-center mb-5'>My Portfolio</h1>
                 <Stack direction='vertical' gap={5}>
                     <Row className='align-items-center justify-content-center'>
                         <Col lg={3} className='d-none d-md-block'>
@@ -26,6 +26,7 @@ const Portfolio = () => {
                         </Col>
                     </Row>
                     <Container className='mb-5 d-none d-sm-block'></Container>
+                    <h1 className='fw-bold text-white text-center mb-5'>My Projects</h1>
                     <Row className='align-items-center position-relative w-100'>
                         <Card className='glass px-3 py-4' style={{ marginLeft: "18%" }}>
                             <h1>Skill Amplifire</h1>

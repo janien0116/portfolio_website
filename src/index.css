@@ -27,6 +27,7 @@ code {
   color: #fff;
   top: 0;
   left: 30%;
+  text-shadow: -1px -1px 0 #542621, 1px -1px 0 #542621, -1px 1px 0 #542621, 1px 1px 0 #542621;
 }
 .hero-header2 {
   position: absolute;
@@ -34,6 +35,7 @@ code {
   color: #fff;
   top: 55px;
   left: 40%;
+  text-shadow: -1px -1px 0 #542621, 1px -1px 0 #542621, -1px 1px 0 #542621, 1px 1px 0 #542621;
 }
 .hero-header3 {
   position: absolute;
@@ -41,6 +43,7 @@ code {
   color: #fff;
   top: 105px;
   left: 50%;
+  text-shadow: -1px -1px 0 #542621, 1px -1px 0 #542621, -1px 1px 0 #542621, 1px 1px 0 #542621;
 }
 .hero-text {
   margin-top: 200px;
@@ -231,6 +234,9 @@ code {
 }
 
 @media screen and (max-width: 400px) {
+  .hero-header3 {
+    margin-top: 20% !important;
+  }
   #joiners-port {
     bottom: 9%;
   }
