@@ -12,7 +12,7 @@ const Home = () => {
     const handleClick = () => window.scrollTo(0, 0);
 
     return (
-        <Stack direction='vertical' gap={5}>
+        <Stack direction='vertical' gap={5} id='home-component'>
             <Container fluid className='my-5 px-2' id='home'>
                 <Row className='position-relative' id='hero'>
                     <Col lg={7} className='hero-image'>
@@ -22,11 +22,11 @@ const Home = () => {
                         <p className='hero-links text-center' id='adobe-clone'><a href='https://myclonedwebsite-adobe.vercel.app/' target="_blank">Adobe<br />(Clone)</a></p>
                     </Col>
                     <Col lg={5}>
-                        <div id='hero-text-div'>
+                        <Container fluid id='hero-text-div'>
                             <h1 className="hero-header display-5">Building the web, </h1>
                             <h1 className="hero-header2 display-5">One pixel at a time.</h1>
                             <h1 className="hero-header3 display-5">Hi there, I'm Janela!</h1>
-                        </div>
+                        </Container>
                         <p className='hero-text text-white fs-5'>Hello and welcome! My name is Janela Daculong,
                             and I'm a self-directed web developer with a strong foundation in web development tools like HTML, CSS and Javascript.
                             With a passion for creating beautiful and functional websites, I've worked on several

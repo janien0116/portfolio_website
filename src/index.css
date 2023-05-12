@@ -193,13 +193,15 @@ code {
 }
 
 @media screen and (max-width: 700px) {
+  #home-component {
+    overflow-x: hidden;
+  }
   .hero-header, .hero-header2, .hero-header3 {
     position: unset;
   }
   #hero-text-div {
     position: absolute;
     top: 0;
-    width: 100%;
     text-align: center;
   }
   .hero-links a {
