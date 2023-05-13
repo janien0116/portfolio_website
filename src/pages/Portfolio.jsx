@@ -10,6 +10,7 @@ import certificateOne from '../assets/certificates/certificate-of-completion-for
 import certificateTwo from '../assets/certificates/certificate-of-completion-for-object-oriented-programming-in-javascript.pdf'
 import certificateThree from '../assets/certificates/SoloLearn_JSIntermediate_Certificate.pdf'
 import certificateFour from '../assets/certificates/fcc_JavaScript_Certificate.pdf'
+import certificateFive from '../assets/certificates/fcc_FrontEndLibs_Certificate.pdf'
 
 const Portfolio = () => {
     return (
@@ -89,6 +90,10 @@ const Portfolio = () => {
                             <Col>
                                 <embed src={`${certificateFour}#toolbar=0&view=fitH`} type="application/pdf" height={'225'} fluid />
                                 <p><a href={certificateFour} className='text-primary' download><i class="bi bi-download"></i> Download PDF</a></p>
+                            </Col>
+                            <Col>
+                                <embed src={`${certificateFive}#toolbar=0&view=fitH`} type="application/pdf" height={'225'} fluid />
+                                <p><a href={certificateFive} className='text-primary' download><i class="bi bi-download"></i> Download PDF</a></p>
                             </Col>
                         </Row>
                     </Container>
