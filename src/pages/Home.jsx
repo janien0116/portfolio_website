@@ -1,11 +1,11 @@
 import React from 'react'
-import { Container, Row, Col, Image, Stack, Button, Figure, ProgressBar } from 'react-bootstrap'
+import { Container, Row, Col, Image, Stack, Button, Figure } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import heroImage from '../assets/hero-image.png'
 import imagePlaceholder from '../assets/logo-symbol.png'
 import instructorHolder from '../assets/KodeGo_logo.png'
 import resume from '../assets/Daculong_Janela_Resume.pdf'
-import Marquee from 'react-fast-marquee'
+// import Marquee from 'react-fast-marquee'
 
 const Home = () => {
 
@@ -17,9 +17,9 @@ const Home = () => {
                 <Row className='position-relative' id='hero'>
                     <Col lg={7} className='hero-image'>
                         <Image src={heroImage} fluid alt='Hero' />
-                        <p className='hero-links' id='skill-ampli'><a href='https://skill-amplifire.vercel.app/' target="_blank">Skill Amplifire</a></p>
-                        <p className='hero-links text-center' id='joiners-port'><a href='https://github.com/janien0116/miniproject2_joiners_portal.git' target="_blank">Joiner's <br />Portal</a></p>
-                        <p className='hero-links text-center' id='adobe-clone'><a href='https://myclonedwebsite-adobe.vercel.app/' target="_blank">Adobe<br />(Clone)</a></p>
+                        <p className='hero-links' id='skill-ampli'><a href='https://skill-amplifire.vercel.app/' target="_blank" rel="noreferrer">Skill Amplifire</a></p>
+                        <p className='hero-links text-center' id='joiners-port'><a href='https://github.com/janien0116/miniproject2_joiners_portal.git' target="_blank" rel="noreferrer">Joiner's <br />Portal</a></p>
+                        <p className='hero-links text-center' id='adobe-clone'><a href='https://myclonedwebsite-adobe.vercel.app/' target="_blank" rel="noreferrer">Adobe<br />(Clone)</a></p>
                     </Col>
                     <Col lg={5}>
                         <Container fluid id='hero-text-div'>
@@ -38,8 +38,8 @@ const Home = () => {
                             </Link>
                             <p className='fs-2'>
                                 <Stack direction="horizontal" gap={3}>
-                                    <a href='https://github.com/janien0116' target='_blank' className='text-black'><i className="bi bi-github"></i></a>
-                                    <a href='https://www.linkedin.com/in/janela-daculong-4b58a3275/' target='_blank' className='text-dark'><i className="bi bi-linkedin"></i></a>
+                                    <a href='https://github.com/janien0116' target='_blank' rel="noreferrer" className='text-black'><i className="bi bi-github"></i></a>
+                                    <a href='https://www.linkedin.com/in/janela-daculong-4b58a3275/' target='_blank' rel="noreferrer" className='text-dark'><i className="bi bi-linkedin"></i></a>
                                 </Stack>
                             </p>
                         </Stack>
@@ -57,7 +57,7 @@ const Home = () => {
                             <li className='mb-3'>Received a glowing feedback of "super above and beyond" from our instructor and awarded as Best Capstone Project.</li>
                         </ul>
                         <div className='d-flex justify-content-center'>
-                            <Link to={`https://skill-amplifire.vercel.app/`} target="_blank">
+                            <Link to={`https://skill-amplifire.vercel.app/`} target="_blank" rel="noreferrer">
                                 <Button variant='dark' className='rounded-pill px-5 fs-5 fw-bold border'>View Live Demo</Button>
                             </Link>
                         </div>

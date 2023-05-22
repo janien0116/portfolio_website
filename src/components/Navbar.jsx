@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import { Navbar, Nav, Container, Image } from 'react-bootstrap'
 import logo from '../assets/logo.png'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const PortfolioNavbar = () => {
-    const navigate = useNavigate();
     const [expanded, setExpanded] = useState(false);
 
     const handleNavItemClick = () => {

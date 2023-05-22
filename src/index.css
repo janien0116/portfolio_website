@@ -195,6 +195,10 @@ code {
 #instructor-img {
   max-width: 250px;
 }
+.rpv-core__inner-page {
+  max-width: fit-content !important;
+}
+
 
 @media screen and (max-width: 700px) {
   #home-component {
@@ -232,6 +236,26 @@ code {
   .glass {
     margin-left: 0 !important;
   }
+  .rpv-core__inner-pages {
+    min-height: 270px;
+  }
+  .rpv-core__inner-pages div {
+    min-height: 270px !important;
+  }
+  .rpv-core__inner-page {
+    min-height: 270px;
+  }
+  .rpv-core__canvas-layer {
+    min-width: fit-content !important;
+    min-height: fit-content !important;
+  }
+  .rpv-core__canvas-layer canvas {
+    min-width: 420px !important;
+    min-height: 270px;
+  }
+  .rpv-core__page-layer {
+    min-width: 420px !important;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -264,5 +288,28 @@ code {
   }
   #jp-img2 {
     top: -5%;
+  }
+  .rpv-core__inner-pages {
+    min-height: 200px;
+  }
+  .rpv-core__inner-pages div {
+    min-height: 200px !important;
+  }
+  .rpv-core__inner-page {
+    min-height: 200px;
+  }
+  .rpv-core__canvas-layer {
+    min-width: fit-content !important;
+    min-height: fit-content !important;
+  }
+  .rpv-core__canvas-layer canvas {
+    min-width: 320px !important;
+    min-height: 200px;
+  }
+  .rpv-core__page-layer {
+    min-width: 320px !important;
+  }
+  #kodego-cert {
+    margin-left: 0 !important;
   }
 }

@@ -22,18 +22,18 @@ const Footer = () => {
                     </Col>
                     <Col lg={3}>
                         <p className='mb-4 fs-5 fw-bold text-gray'>Projects</p>
-                        <p><a href='https://myclonedwebsite-adobe.vercel.app/' target='_blank' className='text-light text-decoration-none'>Adobe Cloned Responsive Website</a></p>
-                        <p><a href='https://github.com/janien0116/miniproject2_joiners_portal.git' target='_blank' className='text-light text-decoration-none'>Joiner's Portal</a></p>
-                        <p><a href='https://skill-amplifire.vercel.app/' target='_blank' className='text-light text-decoration-none'>Skill Amplifire</a></p>
+                        <p><a href='https://myclonedwebsite-adobe.vercel.app/' target='_blank' rel="noreferrer" className='text-light text-decoration-none'>Adobe Cloned Responsive Website</a></p>
+                        <p><a href='https://github.com/janien0116/miniproject2_joiners_portal.git' target='_blank' rel="noreferrer" className='text-light text-decoration-none'>Joiner's Portal</a></p>
+                        <p><a href='https://skill-amplifire.vercel.app/' target='_blank' rel="noreferrer" className='text-light text-decoration-none'>Skill Amplifire</a></p>
                         <p><a href='/' className='text-light text-decoration-none'>One More</a></p>
                     </Col>
                     <Col lg={3}>
                         <p className='mb-4 fs-5 fw-bold text-gray'>Socials</p>
                         <p className='display-5'>
                             <Stack direction="horizontal" gap={3}>
-                                <a href='https://github.com/janien0116' target='_blank' className='text-black'><i className="bi bi-github"></i></a>
-                                <a href='https://www.linkedin.com/in/janela-daculong-4b58a3275/' target='_blank' className='text-dark-blue'><i className="bi bi-linkedin"></i></a>
-                                <a href='https://www.facebook.com/daculongj/' target='_blank' className='text-blue'><i class="bi bi-facebook"></i></a>
+                                <a href='https://github.com/janien0116' target='_blank' rel="noreferrer" className='text-black'><i className="bi bi-github"></i></a>
+                                <a href='https://www.linkedin.com/in/janela-daculong-4b58a3275/' target='_blank' rel="noreferrer" className='text-dark-blue'><i className="bi bi-linkedin"></i></a>
+                                <a href='https://www.facebook.com/daculongj/' target='_blank' rel="noreferrer" className='text-blue'><i class="bi bi-facebook"></i></a>
                             </Stack>
                         </p>
                     </Col>

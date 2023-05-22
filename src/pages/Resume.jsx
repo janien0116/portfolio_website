@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import resume from '../assets/Daculong_Janela_Resume.pdf'
-import { Button, Col, Container, Form, Row, Stack } from 'react-bootstrap'
+import { Button, Container, Form, Stack } from 'react-bootstrap'
 import { Viewer, Worker } from '@react-pdf-viewer/core';
 import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import '@react-pdf-viewer/core/lib/styles/index.css';
