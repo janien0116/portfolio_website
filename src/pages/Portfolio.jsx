@@ -45,7 +45,7 @@ const Portfolio = () => {
           <Container className="mb-5 d-none d-sm-block"></Container>
           <h1 className="fw-bold text-white text-center mb-5">My Projects</h1>
           <Row className="align-items-center position-relative w-100">
-            <Card className="glass px-3 py-4" style={{ marginLeft: "18%" }}>
+            <Card className="glass px-3 py-4 text-black" style={{ marginLeft: "18%" }}>
               <h1>Skill Amplifire</h1>
               <p>
                 Front End: ReactJS with react-bootstrap, axios, react-chartjs-2
@@ -104,7 +104,7 @@ const Portfolio = () => {
           </Row>
           <Container className="mb-5"></Container>
           <Row className="align-items-center position-relative w-100">
-            <Card className="glass px-3 py-4" style={{ marginLeft: "35%" }}>
+            <Card className="glass px-3 py-4 text-black" style={{ marginLeft: "35%" }}>
               <h1>Joiner's Portal</h1>
               <p>
                 Front End: Laravel Blade (PHP templating engine), CSS, and
@@ -156,7 +156,7 @@ const Portfolio = () => {
           </Row>
           <Container className="mb-5"></Container>
           <Row className="align-items-center position-relative w-100">
-            <Card className="glass px-3 py-4" style={{ marginLeft: "5%" }}>
+            <Card className="glass px-3 py-4 text-black" style={{ marginLeft: "5%" }}>
               <h1>Adobe PH Cloned Webpage</h1>
               <p>Front End: HTML, CSS, Bootstrap and JavaScript</p>
               <p>

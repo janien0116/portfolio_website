@@ -25,7 +25,7 @@ const Footer = () => {
                         <p><a href='https://myclonedwebsite-adobe.vercel.app/' target='_blank' rel="noreferrer" className='text-light text-decoration-none'>Adobe Cloned Responsive Website</a></p>
                         <p><a href='https://github.com/janien0116/miniproject2_joiners_portal.git' target='_blank' rel="noreferrer" className='text-light text-decoration-none'>Joiner's Portal</a></p>
                         <p><a href='https://skill-amplifire.vercel.app/' target='_blank' rel="noreferrer" className='text-light text-decoration-none'>Skill Amplifire</a></p>
-                        <p><a href='/' className='text-light text-decoration-none'>One More</a></p>
+                        <p><a href='/' className='text-light text-decoration-none'>Task Manager Project</a></p>
                     </Col>
                     <Col lg={3}>
                         <p className='mb-4 fs-5 fw-bold text-gray'>Socials</p>
