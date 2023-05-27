@@ -11,6 +11,7 @@ import certificateTwo from "../assets/certificates/certificate-of-completion-for
 import certificateThree from "../assets/certificates/SoloLearn_JSIntermediate_Certificate.pdf";
 import certificateFour from "../assets/certificates/fcc_JavaScript_Certificate.pdf";
 import certificateFive from "../assets/certificates/fcc_FrontEndLibs_Certificate.pdf";
+import certificateSix from "../assets/certificates/SoloLearn_PHP_Certificate.pdf"
 import kodegoCertificate from "../assets/certificates/KodeGo_Certificate.pdf";
 import { Viewer, Worker } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
@@ -274,6 +275,19 @@ const Portfolio = () => {
                 />
                 <p>
                   <a href={certificateFive} className="text-primary" download>
+                    <i class="bi bi-download"></i> Download PDF
+                  </a>
+                </p>
+              </Col>
+              <Col>
+                <embed
+                  src={`${certificateSix}#toolbar=0&view=fitH`}
+                  type="application/pdf"
+                  height={"225"}
+                  fluid
+                />
+                <p>
+                  <a href={certificateSix} className="text-primary" download>
                     <i class="bi bi-download"></i> Download PDF
                   </a>
                 </p>
