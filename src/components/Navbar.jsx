@@ -10,8 +10,7 @@ const PortfolioNavbar = () => {
         setExpanded(false);
     };
     return (
-        <div>
-            <Navbar bg="dark" expand="lg" variant="dark" className='py-0' expanded={expanded}>
+            <Navbar bg="dark" expand="lg" variant="dark" className='py-0' expanded={expanded} sticky="top">
                 <Container>
                     <Navbar.Brand><Image src={logo} width={80} fluid alt="logo" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)}/>
@@ -36,7 +35,6 @@ const PortfolioNavbar = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
     )
 }
 

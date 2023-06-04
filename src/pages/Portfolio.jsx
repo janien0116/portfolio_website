@@ -11,7 +11,7 @@ import certificateTwo from "../assets/certificates/certificate-of-completion-for
 import certificateThree from "../assets/certificates/SoloLearn_JSIntermediate_Certificate.pdf";
 import certificateFour from "../assets/certificates/fcc_JavaScript_Certificate.pdf";
 import certificateFive from "../assets/certificates/fcc_FrontEndLibs_Certificate.pdf";
-import certificateSix from "../assets/certificates/SoloLearn_PHP_Certificate.pdf"
+import certificateSix from "../assets/certificates/SoloLearn_PHP_Certificate.pdf";
 import kodegoCertificate from "../assets/certificates/KodeGo_Certificate.pdf";
 import { Viewer, Worker } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
@@ -46,7 +46,10 @@ const Portfolio = () => {
           <Container className="mb-5 d-none d-sm-block"></Container>
           <h1 className="fw-bold text-white text-center mb-5">My Projects</h1>
           <Row className="align-items-center position-relative w-100">
-            <Card className="glass px-3 py-4 text-black" style={{ marginLeft: "18%" }}>
+            <Card
+              className="glass px-3 py-4 text-black"
+              style={{ marginLeft: "18%" }}
+            >
               <h1>Skill Amplifire</h1>
               <p>
                 Front End: ReactJS with react-bootstrap, axios, react-chartjs-2
@@ -105,7 +108,10 @@ const Portfolio = () => {
           </Row>
           <Container className="mb-5"></Container>
           <Row className="align-items-center position-relative w-100">
-            <Card className="glass px-3 py-4 text-black" style={{ marginLeft: "35%" }}>
+            <Card
+              className="glass px-3 py-4 text-black"
+              style={{ marginLeft: "35%" }}
+            >
               <h1>Joiner's Portal</h1>
               <p>
                 Front End: Laravel Blade (PHP templating engine), CSS, and
@@ -157,7 +163,10 @@ const Portfolio = () => {
           </Row>
           <Container className="mb-5"></Container>
           <Row className="align-items-center position-relative w-100">
-            <Card className="glass px-3 py-4 text-black" style={{ marginLeft: "5%" }}>
+            <Card
+              className="glass px-3 py-4 text-black"
+              style={{ marginLeft: "5%" }}
+            >
               <h1>Adobe PH Cloned Webpage</h1>
               <p>Front End: HTML, CSS, Bootstrap and JavaScript</p>
               <p>
@@ -214,7 +223,7 @@ const Portfolio = () => {
               </Worker>
             </Container>
             <Row>
-              <Col>
+              <Col md={4} sm={12}>
                 <embed
                   src={`${certificateOne}#toolbar=0&view=fitH`}
                   type="application/pdf"
@@ -227,7 +236,7 @@ const Portfolio = () => {
                   </a>
                 </p>
               </Col>
-              <Col>
+              <Col md={4} sm={12}>
                 <embed
                   src={`${certificateTwo}#toolbar=0&view=fitH`}
                   type="application/pdf"
@@ -240,7 +249,7 @@ const Portfolio = () => {
                   </a>
                 </p>
               </Col>
-              <Col>
+              <Col md={4} sm={12}>
                 <embed
                   src={`${certificateThree}#toolbar=0&view=fitH`}
                   type="application/pdf"
@@ -253,7 +262,9 @@ const Portfolio = () => {
                   </a>
                 </p>
               </Col>
-              <Col>
+            </Row>
+            <Row>
+              <Col md={4} sm={12}>
                 <embed
                   src={`${certificateFour}#toolbar=0&view=fitH`}
                   type="application/pdf"
@@ -266,7 +277,7 @@ const Portfolio = () => {
                   </a>
                 </p>
               </Col>
-              <Col>
+              <Col md={4} sm={12}>
                 <embed
                   src={`${certificateFive}#toolbar=0&view=fitH`}
                   type="application/pdf"
@@ -279,7 +290,7 @@ const Portfolio = () => {
                   </a>
                 </p>
               </Col>
-              <Col>
+              <Col md={4} sm={12}>
                 <embed
                   src={`${certificateSix}#toolbar=0&view=fitH`}
                   type="application/pdf"

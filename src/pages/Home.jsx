@@ -5,7 +5,7 @@ import heroImage from '../assets/hero-image.png'
 import imagePlaceholder from '../assets/logo-symbol.png'
 import instructorHolder from '../assets/KodeGo_logo.png'
 import resume from '../assets/Daculong_Janela_Resume.pdf'
-// import Marquee from 'react-fast-marquee'
+import Marquee from 'react-fast-marquee'
 
 const Home = () => {
 
@@ -91,7 +91,21 @@ const Home = () => {
                     <Button variant='dark' className='rounded-pill px-5 pt-2 pb-3 fs-4 fw-bold border mb-5'><i class="bi bi-download"></i> Download Resume</Button>
                 </a>
             </Container>
-            <Container className='filler'></Container>
+            <h1 className='display-5 fw-bold my-5 text-center text-white'>My Tech Stack</h1>
+            <Marquee className='mb-5'>
+                <Stack direction='horizontal' gap={5}>
+                    <Image src='https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png' width={100}/>
+                    <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png' width={100}/>
+                    <Image src='https://img.freepik.com/free-icon/css_318-698167.jpg' width={100}/>
+                    <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Webysther_20160423_-_Elephpant.svg/1280px-Webysther_20160423_-_Elephpant.svg.png' width={120}/>
+                    <Image src='https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png' width={150}/>
+                    <Image src='https://cdn.iconscout.com/icon/free/png-256/free-react-1-282599.png?f=webp' width={100}/>
+                    <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Logo.min.svg/2560px-Logo.min.svg.png' width={230}/>
+                    <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png' width={150}/>
+                    <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/JQuery-Logo.svg/2560px-JQuery-Logo.svg.png' width={180}/>
+
+                </Stack>
+            </Marquee>
         </Stack>
     )
 }
