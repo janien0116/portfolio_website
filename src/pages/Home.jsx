@@ -28,7 +28,7 @@ const Home = () => {
                             <h1 className="hero-header3 display-5">Hi there, I'm Janela!</h1>
                         </Container>
                         <p className='hero-text text-white fs-5'>Hello and welcome! My name is Janela Daculong,
-                            and I'm a self-directed web developer with a strong foundation in web development tools like HTML, CSS and Javascript.
+                            and I'm a self-directed Full-Stack Web Developer with a strong foundation in web development tools and frameworks.
                             With a passion for creating beautiful and functional websites, I've worked on several
                             projects to showcase my skills and abilities. Take a look at my portfolio to see some of my
                             best work and learn more about my skills and experience. Thank you for visiting!</p>

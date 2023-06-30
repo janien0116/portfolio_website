@@ -90,7 +90,7 @@ const Footer = () => {
             </p>
             <p>
               <a href="/" className="text-light text-decoration-none">
-                Task Manager Project
+                InstaChat Online
               </a>
             </p>
           </Col>
@@ -115,7 +115,7 @@ const Footer = () => {
                   <i className="bi bi-linkedin"></i>
                 </a>
                 <a
-                  href="https://www.facebook.com/daculongj/"
+                  href="https://www.facebook.com/webdewitched"
                   target="_blank"
                   rel="noreferrer"
                   className="text-blue"
