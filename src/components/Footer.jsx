@@ -89,8 +89,11 @@ const Footer = () => {
               </a>
             </p>
             <p>
-              <a href="/" className="text-light text-decoration-none">
-                InstaChat Online
+              <a href="https://expense-tracker-tau-nine.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-light text-decoration-none">
+                Expense Tracker
               </a>
             </p>
           </Col>
