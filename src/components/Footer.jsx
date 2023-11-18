@@ -70,7 +70,7 @@ const Footer = () => {
             </p>
             <p>
               <a
-                href="https://github.com/janien0116/miniproject2_joiners_portal.git"
+                href="http://13.212.22.179/"
                 target="_blank"
                 rel="noreferrer"
                 className="text-light text-decoration-none"

@@ -136,7 +136,7 @@ const Portfolio = () => {
                 <p className="fs-4">
                   <i class="bi bi-github"></i>{" "}
                   <a
-                    href="https://github.com/janien0116/miniproject2_joiners_portal.git"
+                    href="http://13.212.22.179/"
                     target="_blank"
                     rel="noreferrer"
                     className="text-dark"

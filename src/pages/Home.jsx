@@ -18,7 +18,7 @@ const Home = () => {
                     <Col lg={7} className='hero-image'>
                         <Image src={heroImage} fluid alt='Hero' />
                         <p className='hero-links' id='skill-ampli'><a href='https://skill-amplifire.vercel.app/' target="_blank" rel="noreferrer">Skill Amplifire</a></p>
-                        <p className='hero-links text-center' id='joiners-port'><a href='https://github.com/janien0116/miniproject2_joiners_portal.git' target="_blank" rel="noreferrer">Joiner's <br />Portal</a></p>
+                        <p className='hero-links text-center' id='joiners-port'><a href='http://13.212.22.179/' target="_blank" rel="noreferrer">Joiner's <br />Portal</a></p>
                         <p className='hero-links text-center' id='adobe-clone'><a href='https://myclonedwebsite-adobe.vercel.app/' target="_blank" rel="noreferrer">Adobe<br />(Clone)</a></p>
                     </Col>
                     <Col lg={5}>
