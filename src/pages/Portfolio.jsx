@@ -132,11 +132,21 @@ const Portfolio = () => {
                 them, through the tour history page.
               </p>
               <Stack direction="horizontal" gap={5} className="project-links">
-                {/* <p className='fs-4'><i class="bi bi-cast"></i> <a href='#' className='text-dark'>Live Demo</a></p> */}
+                <p className="fs-4">
+                  <i class="bi bi-cast"></i>{" "}
+                  <a
+                    href="http://54.169.237.195/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-dark"
+                  >
+                    Live Demo
+                  </a>
+                </p>
                 <p className="fs-4">
                   <i class="bi bi-github"></i>{" "}
                   <a
-                    href="http://54.169.237.195/"
+                    href="https://github.com/janien0116/miniproject2_joiners_portal.git"
                     target="_blank"
                     rel="noreferrer"
                     className="text-dark"
