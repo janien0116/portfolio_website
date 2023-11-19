@@ -136,7 +136,7 @@ const Portfolio = () => {
                 <p className="fs-4">
                   <i class="bi bi-github"></i>{" "}
                   <a
-                    href="http://13.212.22.179/"
+                    href="http://54.169.237.195/"
                     target="_blank"
                     rel="noreferrer"
                     className="text-dark"

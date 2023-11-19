@@ -70,7 +70,7 @@ const Footer = () => {
             </p>
             <p>
               <a
-                href="http://13.212.22.179/"
+                href="http://54.169.237.195/"
                 target="_blank"
                 rel="noreferrer"
                 className="text-light text-decoration-none"
