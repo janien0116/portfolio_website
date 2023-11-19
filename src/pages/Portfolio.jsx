@@ -81,7 +81,7 @@ const Portfolio = () => {
                 <p className="fs-4">
                   <i class="bi bi-github"></i>{" "}
                   <a
-                    href="https://github.com/janien0116/skill_amplifire_api.git"
+                    href="https://github.com/janien0116/skill_amplifire.git"
                     target="_blank"
                     rel="noreferrer"
                     className="text-dark"
